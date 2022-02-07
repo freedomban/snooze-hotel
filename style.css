@@ -1,0 +1,383 @@
+body {
+    font-family: arial, 微軟正黑體;
+    background-color: #003E6A;
+    margin: 0;
+}
+
+
+
+/*=============================================
+=                   logo                  =
+=============================================*/
+.navbar .logo-img {
+    display: block;
+    width: 100px;
+    margin-left: 20px;
+    
+}
+/*=============================================
+=                   主選單                    =
+=============================================*/
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+.navbar > ul{
+    display: flex;
+    margin:auto;
+   
+    
+}
+
+.navbar > ul > li{
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    flex-direction: row;
+}
+
+.navbar > ul > li > a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #dcbb0f;;
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+.navbar > ul > li > a:hover{
+    opacity:1 ;
+}
+
+/*=============================================
+=                   圖片輪播                    =
+=============================================*/
+
+.myImgSlider > img{
+    width: 100%;
+    height: 500px;
+}
+   
+/*=============================================
+=                   介紹                    =
+=============================================*/
+
+.home-img{
+    display: flex;
+    margin:40px 20px 0 20px;
+}
+
+.text{
+    flex: 1;
+    background-color: black;
+    padding: 50px 0;
+}
+
+
+.text > p{
+    color: #8b9fb3;
+    padding: 0 20px;
+}
+
+.background{
+    flex: 1;
+    background-image: url(../material/大廳.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+
+.home-img2{
+    display: flex;
+    margin:0 20px 0 20px;
+}
+
+.background2{
+    flex: 1;
+    background-image: url(../material/設備.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*=============================================
+=                  w-80                  =
+=============================================*/
+.w-80 {
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.w-80-left{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+
+}
+
+.w-80-center > h1{
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 2em;
+    display: flex;
+    color: #dcbb0f;
+    padding: 30px 0;
+}
+
+.w-80-center > h1::before,
+.w-80-center > h1::after{
+    content: "";
+    display: block;
+    height: 5px;
+    width: 9em;
+    background-color: #8b9fb3;
+    margin: auto;
+}
+
+
+/*=============================================
+=                  最新消息 MORE                 =
+=============================================*/
+.topic{
+    margin-bottom: 60px;
+    position: relative;
+}
+.topic > h2{
+    color: #dcbb0f;
+    text-align: center;
+    margin-top: 20px;
+    border-bottom: 1px solid #cecece;
+    padding: 20px 0;
+    font-size: 1.5em;
+}
+
+.btn-more{
+    font-size: 0.75em;
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+
+}
+.topic > a {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    background: transparent;
+    color: #8b9fb3;
+    text-decoration: none;
+}
+/*=============================================
+=                  最新消息                  =
+=============================================*/
+
+.news-img-list{
+    display: flex;
+
+}
+
+.item{
+    text-align: left;
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.img-item1,
+.img-item2,
+.img-item3{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 200px;
+    
+    
+}
+
+.content > h3{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight:normal;
+    padding: 10px 0;
+}
+
+.content > p{
+    color: #8b9fb3;
+    font-size: 0.75em;
+    font-weight:normal;
+    padding: 20px 0;
+
+}
+
+/*=============================================
+=                  footer                  =
+=============================================*/
+.footer{
+    padding-top: 40px;
+    text-align: center;
+    background-color: #dad9d6;
+}
+
+.copyright{
+    text-align: center;
+    background-color: #27292b;
+    color: #FFFFFF;
+    font-size: 0.3em;
+    padding: 20px;
+}
+
+.footer > a{
+    padding: 0 10px;
+}
+
+/*=============================================
+=                  news-top                  =
+=============================================*/
+
+
+
+/*=============================================
+=                  news-item                  =
+=============================================*/
+
+.news-list{
+    display: flex;
+    justify-content: center;
+}
+
+.img{
+    background-position: revert;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 200px;
+    margin-bottom: 20px; 
+    width: 200px;
+}
+
+.item-2{
+    text-align: left;
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+/*=============================================
+=                  room                  =
+=============================================*/
+.roomcontainer{
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+
+.roomitem{
+    display: flex; 
+    justify-content: center;
+    
+}
+
+.roomlist{
+    margin:0 50px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    overflow: hidden;
+   
+}
+
+.roomtext{
+    width: 300px;
+    padding: 5px;
+    box-sizing: border-box;
+    
+}
+.roomtext > h2{
+   font-size: 1.5em;
+
+}
+.roomtext > p{
+    font-size: 0.75em;
+    
+
+}
+.roomlist > img{
+    object-fit: cover;
+    text-align: center;
+}
+.roombtn{
+    line-height: 1.5em;
+    border: 1px solid #ccc;
+    padding: 0 1em;
+    align-self: flex-end;
+    text-decoration: none;
+    border-radius: 200px;
+    margin-top: auto;
+
+}
+
+.roomsection2{
+    padding:40px 0;
+}
+
+/*=============================================
+=                  room-intro                 =
+=============================================*/
+
+
+
+
+/*=============================================
+=                  fac                  =
+=============================================*/
+.wrap{
+    width: 1200px;
+    margin: auto;
+
+}
+.facitem{
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+    background-color: #8b9fb3;
+}
+
+.factimg{
+    width: 55%;
+    flex-shrink: 0;
+} 
+
+.factimg > img{
+    vertical-align: middle;
+    width: 100%;
+} 
+.factext{
+    width: 55%;
+    flex-shrink: 0;
+    background-color: #dcbb0f;
+    padding: 50px 30px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+
+.facitem > :first-child{
+    margin-right: -15%;
+}
+
+.factext > h2{
+    font-size: 1.5em;
+}
+
+.factext > p{
+    font-size: 0.75em;
+    padding: 10px;
+}
+
