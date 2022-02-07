@@ -84,7 +84,7 @@ body {
 
 .background{
     flex: 1;
-    background-image: url(../material/大廳.jpg);
+    background-image: url(./material/大廳.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;    
@@ -97,7 +97,7 @@ body {
 
 .background2{
     flex: 1;
-    background-image: url(../material/設備.jpg);
+    background-image: url(./material/設備.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
