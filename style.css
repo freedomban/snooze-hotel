@@ -504,6 +504,15 @@ body {
     color: #dcbb0f;
     line-height: 25px;
 }
+
+.PS{
+    text-align: center;
+    padding: 10px;
+    color: rgb(221, 69, 69);
+}
+.NO-jams{
+    text-align: center;
+}
 /*=============================================
 =                  location                  =
 =============================================*/
