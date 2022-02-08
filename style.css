@@ -1,6 +1,6 @@
 body {
     font-family: arial, 微軟正黑體;
-    background-color: #003E6A;
+    background-color: #FFFFFF;
     margin: 0;
 }
 
@@ -24,6 +24,7 @@ body {
     align-items: center;
     padding: 20px;
     position: relative;
+    background-color: #0a0a0a;
 }
 
 .navbar > ul{
@@ -38,6 +39,7 @@ body {
     padding: 20px;
     text-align: center;
     flex-direction: row;
+    white-space: nowrap;
 }
 
 .navbar > ul > li > a{
@@ -53,7 +55,7 @@ body {
 }
 
 /*=============================================
-=                   圖片輪播                    =
+=                   index-圖片輪播                    =
 =============================================*/
 
 .myImgSlider > img{
@@ -62,7 +64,7 @@ body {
 }
    
 /*=============================================
-=                   介紹                    =
+=                   index-介紹                    =
 =============================================*/
 
 .home-img{
@@ -78,13 +80,13 @@ body {
 
 
 .text > p{
-    color: #8b9fb3;
+    color: #8d9196;
     padding: 0 20px;
 }
 
 .background{
     flex: 1;
-    background-image: url(./material/大廳.jpg);
+    background-image: url(./material/飯店.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;    
@@ -104,7 +106,7 @@ body {
 }
 
 /*=============================================
-=                  w-80                  =
+=                  w-80 W-100                  =
 =============================================*/
 .w-80 {
     display: block;
@@ -122,17 +124,17 @@ body {
 
 }
 
-.w-80-center > h1{
+.w-100-center > h1{
     width: 100%;
     box-sizing: border-box;
-    font-size: 2em;
+    font-size: 30px;
     display: flex;
-    color: #dcbb0f;
+    color: #0f0d0d;
     padding: 30px 0;
 }
 
-.w-80-center > h1::before,
-.w-80-center > h1::after{
+.w-100-center > h1::before,
+.w-100-center > h1::after{
     content: "";
     display: block;
     height: 5px;
@@ -143,7 +145,7 @@ body {
 
 
 /*=============================================
-=                  最新消息 MORE                 =
+=                 index 最新消息 MORE                 =
 =============================================*/
 .topic{
     margin-bottom: 60px;
@@ -155,7 +157,8 @@ body {
     margin-top: 20px;
     border-bottom: 1px solid #cecece;
     padding: 20px 0;
-    font-size: 1.5em;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .btn-more{
@@ -174,11 +177,12 @@ body {
     text-decoration: none;
 }
 /*=============================================
-=                  最新消息                  =
+=                  index-最新消息                  =
 =============================================*/
 
 .news-img-list{
     display: flex;
+    justify-content: center;
 
 }
 
@@ -200,8 +204,12 @@ body {
     
 }
 
+.item > a{
+    text-decoration: none;
+}
+
 .content > h3{
-    color: #FFFFFF;
+    color: #0a0a0a;
     text-decoration: none;
     font-size: 1em;
     font-weight:normal;
@@ -209,10 +217,11 @@ body {
 }
 
 .content > p{
-    color: #8b9fb3;
+    color: #505253;
     font-size: 0.75em;
     font-weight:normal;
     padding: 20px 0;
+    
 
 }
 
@@ -223,6 +232,7 @@ body {
     padding-top: 40px;
     text-align: center;
     background-color: #dad9d6;
+    margin-top:30px;
 }
 
 .copyright{
@@ -259,7 +269,7 @@ body {
     display: block;
     height: 200px;
     margin-bottom: 20px; 
-    width: 200px;
+    width: 300px;
 }
 
 .item-2{
@@ -287,9 +297,11 @@ body {
 
 .roomlist{
     margin:0 50px;
-    background-color: #FFFFFF;
+    background-color: #ffffff69;
     border-radius: 4px;
     overflow: hidden;
+    background-color: #94bef1;
+
    
 }
 
@@ -298,9 +310,12 @@ body {
     padding: 5px;
     box-sizing: border-box;
     
+    
 }
 .roomtext > h2{
-   font-size: 1.5em;
+   font-size: 20px;
+   padding: 10px;
+   color: #FFFFFF;
 
 }
 .roomtext > p{
@@ -309,12 +324,11 @@ body {
 
 }
 .roomlist > img{
-    object-fit: cover;
     text-align: center;
 }
 .roombtn{
     line-height: 1.5em;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(14, 12, 12);
     padding: 0 1em;
     align-self: flex-end;
     text-decoration: none;
@@ -327,14 +341,7 @@ body {
     padding:40px 0;
 }
 
-/*=============================================
-=                  room-intro                 =
-=============================================*/
-
-
-
-
-/*=============================================
+/*============================================
 =                  fac                  =
 =============================================*/
 .wrap{
@@ -345,8 +352,6 @@ body {
 .facitem{
     display: flex;
     align-items: center;
-    margin-bottom: 70px;
-    background-color: #8b9fb3;
 }
 
 .factimg{
@@ -356,16 +361,17 @@ body {
 
 .factimg > img{
     vertical-align: middle;
-    width: 100%;
+    width: 80%;
 } 
 .factext{
     width: 55%;
     flex-shrink: 0;
-    background-color: #dcbb0f;
+    background-color: #47df98;
     padding: 50px 30px;
     box-sizing: border-box;
     position: relative;
     z-index: 1;
+    border-radius: 4px;
 }
 
 .facitem > :first-child{
@@ -373,11 +379,155 @@ body {
 }
 
 .factext > h2{
-    font-size: 1.5em;
+    font-size: 20px;
 }
 
 .factext > p{
     font-size: 0.75em;
     padding: 10px;
+    line-height: 16px;
 }
 
+
+/*=============================================
+=                  about                  =
+=============================================*/
+
+.aboutlist{
+    display: flex;
+    justify-content: center;
+}
+
+.aboutimg > img{
+    display: block;
+    margin: auto;
+}
+
+.aboutext{
+    margin: 50px;
+}
+
+.aboutext > h3{
+    color: #dad9d6;
+}
+
+/*=============================================
+=                  contact                  =
+=============================================*/
+.conwrap{
+    display: flex;
+    justify-content: center;
+    background-image: url(./material/房型2.jpg);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    border: 10px solid #fff;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(6px);
+    margin: 20px 0;
+    align-items: center;
+}
+
+.form label{
+    line-height: 2;
+    font-weight: bold;
+}
+
+.form input{
+    line-height: 1.5;
+    border-radius: 4px;
+}
+
+.submitlist > button{
+    background-color: green;
+    color: #FFFFFF;
+}
+
+
+  /*=============================================
+=                  food                  =
+=============================================*/
+.foodwrap{
+    display: flex;
+    padding: 25px;
+    justify-content: center;
+
+}
+.fooditem{
+    position: relative;
+    width: 20%;
+
+}
+
+.fooditem > img {
+    vertical-align: middle;
+    height: 350px;
+    aspect-ratio: 4/5;
+}
+
+.fooditem > img {
+    vertical-align: middle;
+    height: 350px;
+    aspect-ratio: 4/5;
+    
+}
+
+.foodtext {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity .3s;
+    width: 280px;
+    text-align: center;
+}
+
+.fooditem:hover .foodtext{
+    opacity: 1;
+}
+.foodtext > h3{
+    color: #dcbb0f;
+    line-height: 25px;
+}
+/*=============================================
+=                  location                  =
+=============================================*/
+
+.map{
+    margin: 40px;
+}
+
+/*=============================================
+=           roomintro                    =
+=============================================*/
+
+.roomintroimg{
+    text-align:center;
+    margin-top: 50px;
+}
+
+.roomintrotext{
+    border-top: 1px solid #0a0a0a;
+    width: 100%;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    line-height: 26px;
+    color: #666;
+    font-size: 15px;
+    text-align: center;
+}
