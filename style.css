@@ -24,7 +24,7 @@ body {
     align-items: center;
     padding: 20px;
     position: relative;
-    background-color: #0a0a0a;
+    background-color: #FFFFFF;
 }
 
 .navbar > ul{
@@ -52,6 +52,7 @@ body {
 
 .navbar > ul > li > a:hover{
     opacity:1 ;
+    cursor: context-menu;
 }
 
 /*=============================================
@@ -409,7 +410,7 @@ table{
 .conwrap{
     display: flex;
     justify-content: center;
-    background-image: url(./material/房型2.jpg);
+    background-image: url(./material/pexels-konstantinos-eleftheriadis-2034335.jpg);
     background-repeat:no-repeat ;
     background-size: cover;
     background-position: center;
@@ -448,62 +449,13 @@ table{
   /*=============================================
 =                  food                  =
 =============================================*/
-.foodwrap{
-    display: flex;
-    padding: 25px;
-    justify-content: center;
-
-}
-.fooditem{
-    position: relative;
-    width: 20%;
-
-}
-
-.fooditem > img {
-    vertical-align: middle;
-    height: 350px;
-    aspect-ratio: 4/5;
-}
-
-.fooditem > img {
-    vertical-align: middle;
-    height: 350px;
-    aspect-ratio: 4/5;
-    
-}
-
-.foodtext {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    opacity: 0;
-    transition: opacity .3s;
-    width: 280px;
-    text-align: center;
-}
-
-.fooditem:hover .foodtext{
-    opacity: 1;
-}
-.foodtext > h3{
-    color: #dcbb0f;
-    line-height: 25px;
-}
-
-.PS{
-    text-align: center;
-    padding: 10px;
-    color: rgb(221, 69, 69);
-}
-.NO-jams{
-    text-align: center;
+.foodbackground{
+    background-image: url(./material/food.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    width: 300px;
+    height: 100%;
 }
 /*=============================================
 =                  location                  =
@@ -516,28 +468,111 @@ table{
 /*=============================================
 =           roomintro                    =
 =============================================*/
-.conbox-left{
-    text-align: center;
-}
+
 .content-left{
-    display: flex;
-    flex-direction: column;
-    margin: 20px 0 0 20px;
+    display: inline-block;
+    margin: 40px;
+    vertical-align: baseline;
+    text-align: center
 }
 
 
 .list-title{
     color: #8a8a8a;
-    display: inline-block;
+    display: block;
     font-weight: lighter;
     font-size: 1.5em;
     text-decoration: none;
+    vertical-align:baseline
 }
 
 .content-left-list{
     display: block;
+    background-color: transparent;
+    cursor: default;
+    padding: 15px;
 }
 
-.content-left-list >li{
+.content-left-list > li > a{
+    background-color:gainsboro;
+    color: #8a8a8a;
+    border-top: 1px solid #f4f4f4;
+    display: block;
+    text-decoration: none;
+    padding:12px 20px;
+}
+.content-left-list > li > a:hover{
+    color: #47df98;
+    background-color: #27292b;
+    cursor: context-menu;
+}
 
+.sldimg > img{
+    display: block;
+   
+}
+
+section.guestroom{
+    display: flex;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+.roomTopBlock{
+    margin: 60px auto;
+    background-color: #fff;
+}
+
+.title{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 20px 0 25px;
+    color: #222;
+}
+
+.btnM {
+    max-width: 250px;
+    padding: 20px 0 0;
+}
+.btnM > a{
+    display: block;
+    line-height: 15px;
+    font-size: 15px;
+    padding: 10px;
+    background: #AC8541;
+    color: #FFF !important;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none !important;
+}
+
+.withBar{
+    background-color: #0a0a0a;
+    color: #FFF;
+    font-size: 20px;
+    text-align: left;
+    padding: 10px 20px;
+}
+
+.borderBlock{
+    padding: 40px 40px 30px;
+    border: 1px solid #bbb;
+    background-color: #f4f4f4;
+}
+.table01{
+   width:100%
+}
+.detail{
+    width: auto;
+}
+.table01 > th{
+    font-size: 20px;
+    border: 1px solid #DDD;
+    vertical-align: middle;
+    text-align: left;
+    padding: 10px 15px;
+}
+.table01 > th > td{
+    vertical-align: middle;
+    text-align: left;
+    padding: 10px 15px;
 }
