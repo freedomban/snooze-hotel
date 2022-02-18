@@ -1,6 +1,5 @@
 body {
     font-family: arial, 微軟正黑體;
-    background-color: #FFFFFF;
     margin: 0;
 }
 
@@ -22,7 +21,7 @@ body {
 .navbar{
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 12px;
     position: relative;
     background-color: #FFFFFF;
 }
@@ -44,7 +43,7 @@ body {
 
 .navbar > ul > li > a{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     color: #dcbb0f;;
     font-weight: bold;
     opacity: 0.7;
@@ -142,7 +141,7 @@ body {
     font-size: 27px;
     display: flex;
     color: #0f0d0d;
-    padding: 30px 0;
+    padding: 50px 0;
 }
 
 .w-100-center > h1::before,
@@ -386,21 +385,25 @@ body {
 =                  about                  =
 =============================================*/
 
-table,td{
+.floorroomname {
     border: 1px solid;
     padding: 9px;
     background-color: #0a0a0a;
-    color: #FFFFFF;
+    color: #fff;
     font:revert;
 }
 
-table{
+.floor-intro table {
     margin: auto auto 40px auto;
 }
 
 .floor{
     border-left: 1px solid;
     background-color: firebrick;
+    border: 1px solid #fff;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
 }
 
 
@@ -417,7 +420,7 @@ table{
 
 }
 
-.container{
+.contact-form{
     width: 500px;
     height: 500px;
     background-color: rgba(0, 0, 0, 0.3);
@@ -449,20 +452,55 @@ table{
   /*=============================================
 =                  food                  =
 =============================================*/
-.foodbackground{
-    background-image: url(./material/food.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-    width: 300px;
-    height: 100%;
+
+.restaurantinner{
+    width: 900px;
+    margin: auto;
+    display: flex;
 }
+.restphoto-word{
+    background-color: khaki;
+}
+
+.restphoto > img{
+    height: 300px;
+}
+
+.restname{
+    font-size: 20px;
+    margin: 0 20px;
+    padding: 10px 0;
+}
+.taglist{
+    text-align: left;
+    margin: 10px 10px 15px;
+}    
+
+.taglist > li{
+    display: inline-block;
+    font-size: 12px;
+    padding: 5px 8px;
+    background-color: aliceblue;
+}
+
+.desc{
+    font-size: 13px;
+    text-align: inherit;
+    padding: 0 10px;
+    line-height: 1.2;
+}
+
+.restfood-list{
+    margin:15px 0 50px 0
+}
+
+
 /*=============================================
 =                  location                  =
 =============================================*/
 
 .map{
-    margin: 40px;
+    text-align: center;
 }
 
 /*=============================================
@@ -531,7 +569,7 @@ section.guestroom{
 
 .btnM {
     max-width: 250px;
-    padding: 20px 0 0;
+    padding: 20px 20px 20px;
 }
 .btnM > a{
     display: block;
@@ -545,6 +583,13 @@ section.guestroom{
     text-decoration: none !important;
 }
 
+.thumbList{
+    display: flex;
+    flex-direction: column;
+}
+.sldBlock{
+    display: flex;
+}
 .withBar{
     background-color: #0a0a0a;
     color: #FFF;
@@ -557,22 +602,34 @@ section.guestroom{
     padding: 40px 40px 30px;
     border: 1px solid #bbb;
     background-color: #f4f4f4;
+    margin: 0 auto 50px;
 }
 .table01{
-   width:100%
+   width:100%;
+   border-collapse: collapse;
 }
 .detail{
     width: auto;
 }
-.table01 > th{
-    font-size: 20px;
+
+.table01-detail > th{
+    border: 1px solid #DDD;
+    padding: 10px 15px;
+    text-align: left;
+    font-size: 16px;
+    background-color: #fff;
+
+}
+
+.table01-detail > td{
     border: 1px solid #DDD;
     vertical-align: middle;
-    text-align: left;
     padding: 10px 15px;
+    text-align: left;
+    font-size: 12px;
+
 }
-.table01 > th > td{
-    vertical-align: middle;
-    text-align: left;
-    padding: 10px 15px;
+.caution{
+    font-size: 10px;
+    padding: 20px 20px 0 0;
 }
