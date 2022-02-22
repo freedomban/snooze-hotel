@@ -44,13 +44,13 @@ body {
 .navbar > ul > li > a{
     text-decoration: none;
     font-size: 18px;
-    color: #dcbb0f;;
+    color: rgb(58, 46, 6);
     font-weight: bold;
-    opacity: 0.7;
+    
 }
 
 .navbar > ul > li > a:hover{
-    opacity:1 ;
+    color: #dcbb0f;
     cursor: context-menu;
 }
 
@@ -459,7 +459,7 @@ body {
     display: flex;
 }
 .restphoto-word{
-    background-color: khaki;
+    background-color: rgb(58, 46, 6);
 }
 
 .restphoto > img{
@@ -470,6 +470,7 @@ body {
     font-size: 20px;
     margin: 0 20px;
     padding: 10px 0;
+    color: #fff;
 }
 .taglist{
     text-align: left;
@@ -488,6 +489,7 @@ body {
     text-align: inherit;
     padding: 0 10px;
     line-height: 1.2;
+    color: #fff;
 }
 
 .restfood-list{
@@ -503,6 +505,54 @@ body {
     text-align: center;
 }
 
+.mapTitle{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.mapTitle > h1{
+    font-size: 25px;
+    padding: 10px;
+}
+
+.mapTitle > h2,
+.mapTitle > h3{
+    font-size: 15px;
+    padding: 10px;
+}
+
+.titleBox2{
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e3e3e3;
+    text-align: center;
+}
+.titleHow{
+    position: relative;
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 16px;
+    font-size: 14px;
+    letter-spacing: .1em;
+    color: #000;
+    font-weight: 400;
+    font-weight: bolder;
+}
+
+.titleHow::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 2px;
+    background-color: #916f2d;
+}
+
+.fa-solid{
+    font-size: 40px;
+    padding: 0 20px;
+}
 /*=============================================
 =           roomintro                    =
 =============================================*/
@@ -547,7 +597,24 @@ body {
 
 .sldimg > img{
     display: block;
-   
+    width: 100%;
+    height: 400px;
+    object-fit: cover;   
+}
+
+.on > img{
+    width: 100%;
+    height: 131px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.on:hover{
+    filter: none;
+}
+
+.on{
+    filter: grayscale(100%);
 }
 
 section.guestroom{
@@ -587,6 +654,7 @@ section.guestroom{
     display: flex;
     flex-direction: column;
 }
+
 .sldBlock{
     display: flex;
 }
@@ -632,4 +700,19 @@ section.guestroom{
 .caution{
     font-size: 10px;
     padding: 20px 20px 0 0;
+}
+
+/*=============================================
+=           goBackBtn                  =
+=============================================*/
+
+#goBackBtn {
+    width: 40px;
+    height: 40px;
+    border:none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 1000;
+    border-radius: 50%;
 }
