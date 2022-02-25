@@ -6,36 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>facility</title>
-    <link rel="stylesheet"href ="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href ="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./hamburger.css">
+    <link rel="stylesheet" href="./rwd.css">
 </head>
-
 <body>
-    <nav class="navbar">
-        <div class="logo-div">
-            <a href="./index.html">
+    <header class="header-top">
+        <nav class="navbar">
+            <div class="logo-div">
+                <a href="./index.html">
                     <img src="./logo.png" alt="logo" class="logo-img">
-            </a>
+                </a>
+            </div>
+        </nav>
+        <div class="offcanvas">
+            <ul >
+                <li> <a href="about.html">關於我們</a></li>
+                <li> <a href="news.html">最新消息</a></li>
+                <li> <a href="room.html">客房介紹</a></li>
+                <li> <a href="food.html">美食饗宴</a></li>
+                <li> <a href="facility.html">休閒設施</a> </li>
+                <li> <a href="location.html">交通資訊</a> </li>
+                <li> <a href="contact.html">聯絡我們</a> </li>
+            </ul>
         </div>
-        <ul>
-            <li> <a href="about.html">關於我們</a></li>
-            <li> <a href="news.html">最新消息</a></li>
-            <li> <a href="room.html">客房介紹</a></li>
-            <li> <a href="food.html">美食饗宴</a></li>
-            <li> <a href="facility.html">休閒設施</a> </li>
-            <li> <a href="location.html">交通資訊</a> </li>
-            <li> <a href="contact.html">聯絡我們</a> </li>
-        </ul>
-    </nav>
-    <header>
+        <div class="ham-top">
+            <button class="hamburger hamburger--collapse" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+        </div>
+    </header>
+    <section>
         <div class="main-carousel>">
             <div class="myImgSlider">
                 <div class="myImg_Slider" style="background-image: url(./material/pexels-jean-van-der-meulen-1457842.jpg);">
                 </div>
             </div>
         </div>
-    </header>
+    </section>
     <section>
         <div class="news-top w-100-center">
             <h1>休閒設施</h1>
@@ -134,8 +146,13 @@
         </div>
         </div>
         <div class="footer-end bg-dark mt-5 py-2">
-            <p class="text-center">&copy; Copyright © 2022 CWjyun 僅供學習、展示用
-                不做為商業以及其他用途使用，若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，後續會由專人協助處理。</p>
+            <p class="text-center">Copyright © 2022 CWjyun<br>僅供學習、展示用
+                不做為商業以及其他用途使用，參考資料來源:萬豪飯店、遠雄悅來飯店、JR東日本大飯店、翰品酒店。<br>若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，後續會由專人協助處理。
+            </p>
         </div>
-    </footer>    
+    </footer>
+    <!-- jquery -->
+    <script src="https://kit.fontawesome.com/6775dccb08.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>    
 </body>

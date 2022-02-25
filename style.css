@@ -1,3 +1,7 @@
+html{
+    font-size: 16px;
+}
+
 body {
     font-family: arial, 微軟正黑體;
     margin: 0;
@@ -18,38 +22,38 @@ body {
 =                   主選單                    =
 =============================================*/
 
-.navbar{
+.header-top{
     display: flex;
+}
+
+.navbar{
     align-items: center;
     padding: 12px;
     position: relative;
     background-color: #FFFFFF;
 }
 
-.navbar > ul{
+.offcanvas{
+    margin: auto;
+}
+
+.offcanvas > ul{
     display: flex;
-    margin:auto;
-   
-    
 }
 
-.navbar > ul > li{
-    display: inline-block;
-    padding: 20px;
-    text-align: center;
-    flex-direction: row;
-    white-space: nowrap;
+.offcanvas > ul > li{
+    padding: 0 20px;
 }
 
-.navbar > ul > li > a{
+.offcanvas > ul > li > a{
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1rem;
     color: rgb(58, 46, 6);
-    font-weight: bold;
+    white-space: nowrap
     
 }
 
-.navbar > ul > li > a:hover{
+.offcanvas > ul > li > a:hover{
     color: #dcbb0f;
     cursor: context-menu;
 }
@@ -60,10 +64,9 @@ body {
 
 .myImg_Slider{
     height: 500px;
-    width: 100%;
     margin: 0 auto;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover
 }
 /*=============================================
 =                   index-介紹                    =
@@ -84,7 +87,7 @@ body {
 .text > p{
     color: #FFFFFF;
     padding: 0 20px;
-    font: 25px;
+    font-size: 1rem;
 }
 
 .background{
@@ -138,7 +141,7 @@ body {
 .w-100-center > h1{
     width: 100%;
     box-sizing: border-box;
-    font-size: 27px;
+    font-size: 1.25rem;
     display: flex;
     color: #0f0d0d;
     padding: 50px 0;
@@ -168,12 +171,12 @@ body {
     margin-top: 20px;
     border-bottom: 1px solid #cecece;
     padding: 20px 0;
-    font-size: 30px;
+    font-size: 1.25rem;
     font-weight: bold;
 }
 
 .btn-more{
-    font-size: 0.75em;
+    font-size: 0.75rem;
     position: absolute;
     right: 0;
     bottom: 20px;
@@ -220,14 +223,14 @@ body {
 .content > h3{
     color: #0a0a0a;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight:normal;
     padding: 10px 0;
 }
 
 .content > p{
     color: #505253;
-    font-size: 0.75em;
+    font-size: 0.625rem;
     font-weight:normal;
     padding: 20px 0;
     
@@ -259,7 +262,7 @@ body {
     text-align: center;
     background-color: #27292b;
     color: #FFFFFF;
-    font-size: 0.3em;
+    font-size: 0.625rem;
     padding: 20px;
 }
 
@@ -276,8 +279,12 @@ body {
 .footer-list > ul > li > a{
     text-decoration: none;
     color: #fff;
-    font-size: 5px;
+    font-size: 0.625rem;
 }
+
+.footer-end{
+    line-height: 1.5;
+} 
 
 /*=============================================
 =                  news最新消息                  =
@@ -327,12 +334,12 @@ body {
 }
 
 .roomtext > h2{
-   font-size: 20px;
+   font-size: 1.25rem;
    padding: 10px;
    color: saddlebrown;
 }
 .roomtext > p{
-    font-size: 14px;
+    font-size: 1rem;
     padding: 10px;
     line-height: 1.2;
 }
@@ -394,11 +401,11 @@ body {
 }
 
 .factext > h2{
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .factext > p{
-    font-size: 0.75em;
+    font-size: 1rem;
     padding: 10px;
     line-height: 16px;
 }
@@ -477,7 +484,7 @@ body {
 =============================================*/
 
 .restaurantinner{
-    width: 900px;
+    width: 80%;
     margin: auto;
     display: flex;
 }
@@ -488,9 +495,12 @@ body {
 .restphoto > img{
     height: 300px;
 }
+.restphoto-word{
+    height: 300px;
+}
 
 .restname{
-    font-size: 20px;
+    font-size: 1.25rem;
     margin: 0 20px;
     padding: 10px 0;
     color: #fff;
