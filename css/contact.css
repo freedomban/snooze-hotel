@@ -1,0 +1,41 @@
+/*=============================================
+=                  contact                  =
+=============================================*/
+.conwrap{
+    display: flex;
+    justify-content: center;
+    background-image: url(../material/pexels-konstantinos-eleftheriadis-2034335.jpg);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.contact-form{
+    width: 500px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    border: 10px solid #fff;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(6px);
+    margin: 20px 0;
+    align-items: center;
+}
+
+.form label{
+    line-height: 2;
+    font-weight: bold;
+}
+
+.form input{
+    line-height: 1.5;
+    border-radius: 4px;
+}
+
+.submitlist > button{
+    background-color: green;
+    color: #FFFFFF;
+}
+

@@ -1,0 +1,112 @@
+/*=============================================
+=                   logo                  =
+=============================================*/
+.navbar .logo-img {
+    display: block;
+    width: 100px;
+    margin-left: 20px;
+    
+}
+/*=============================================
+=                   主選單                    =
+=============================================*/
+
+.header-top{
+    display: flex;
+}
+
+.navbar{
+    align-items: center;
+    padding: 12px;
+    position: relative;
+    background-color: #FFFFFF;
+}
+
+.offcanvas{
+    margin: auto;
+}
+
+.offcanvas > ul{
+    display: flex;
+}
+
+.offcanvas > ul > li{
+    padding: 0 20px;
+}
+
+.offcanvas > ul > li > a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: rgb(58, 46, 6);
+    white-space: nowrap
+    
+}
+
+.offcanvas > ul > li > a:hover{
+    color: #dcbb0f;
+    cursor: context-menu;
+}
+
+/*=============================================
+=                   圖片輪播                    =
+=============================================*/
+
+.myImg_Slider{
+    height: 500px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*=============================================
+=                  手機導覽列         =
+=============================================*/
+.hamburger{
+    display: none;
+}
+
+.on{
+    display: inline-block !important;
+}
+
+@media (max-width: 767.98px){
+    .header-top{
+        display: flex;
+        justify-content: space-between;
+    }
+    .ham-top {
+        z-index: 99;
+        margin: auto 0;
+    }
+    .hamburger{
+        display: inline-block;
+        margin: 0 auto;
+    }
+    .offcanvas {
+        display: none;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        background-color: rgba(0, 0, 0, .3);
+        padding: 60px 0;
+        top: 0;
+    }
+
+    .offcanvas ul{
+        flex-direction: column;
+    }
+
+    .offcanvas ul li {
+        margin: 18px 0;
+        text-align: center;
+    }
+
+    .offcanvas ul li a {
+        color: white;
+        font-weight: 600;
+        font-size: 1.2rem;
+        text-decoration: none;
+    }
+    .myImg_Slider{
+        max-height: 300px;
+    }
+}

@@ -1,0 +1,114 @@
+
+/*=============================================
+=                  w-80 W-100 COMM                  =
+=============================================*/
+.w-80nop {
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.w-80 {
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+
+}
+
+.w-80-left{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+
+}
+
+.w-100-center > h1{
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.25rem;
+    display: flex;
+    color: #0f0d0d;
+    padding: 50px 0;
+}
+
+.w-100-center > h1::before,
+.w-100-center > h1::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 28rem;
+    background-color: #8b9fb3;
+    margin: auto;
+}
+
+
+
+/*=============================================
+=                  footer                  =
+=============================================*/
+#footer{
+    padding-top: 40px;
+    text-align: center;
+    background-color: #000;
+    margin-top:110px;
+}
+
+.confooter{
+    width: 100%;
+}
+.text-white{
+    color: #FFF;
+}
+.confoot{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.copyright{
+    text-align: center;
+    background-color: #27292b;
+    color: #FFFFFF;
+    font-size: 0.625rem;
+    padding: 20px;
+}
+
+
+.footer-list{
+   padding: 0 20px;
+}
+.footer-list > ul{
+    padding: 10px 0;
+}
+.footer-list > ul > li{
+    padding: 10px;
+}
+.footer-list > ul > li > a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.625rem;
+}
+
+.footer-end{
+    line-height: 1.5;
+} 
+
+
+/*=============================================
+=           goBackBtn                  =
+=============================================*/
+
+#goBackBtn {
+    width: 40px;
+    height: 40px;
+    border:none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 1000;
+    border-radius: 50%;
+}

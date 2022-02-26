@@ -1,0 +1,237 @@
+/*=============================================
+=           roomintro left-side                   =
+=============================================*/
+
+.content-left{
+    display: inline-block;
+    margin: 40px;
+    vertical-align: baseline;
+    text-align: center
+}
+
+
+.list-title{
+    color: #8a8a8a;
+    display: block;
+    font-weight: lighter;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.content-left-list{
+    display: block;
+    background-color: transparent;
+    cursor: default;
+    padding: 15px;
+}
+
+.content-left-list > li > a{
+    background-color:gainsboro;
+    color: #8a8a8a;
+    border-top: 1px solid #f4f4f4;
+    display: block;
+    text-decoration: none;
+    padding:12px 20px;
+}
+/*=============================================
+=           roomintro sldimg                   =
+=============================================*/
+
+.sldimg > img{
+    display: block;
+    width: 100%;
+    height: 398.5px;
+    object-fit: cover;   
+}
+
+.sldimg-block > img{
+    width: 100%;
+    height: 131px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.sldimg-block:hover{
+    filter: none;
+}
+
+.sldimg-block{
+    filter: grayscale(100%);
+}
+
+section.guestroom{
+    display: flex;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+.roomTopBlock{
+    margin: 60px auto;
+    background-color: #fff;
+}
+
+.title{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 20px 0 25px;
+    color: #222;
+}
+
+.btnM {
+    max-width: 250px;
+    padding: 20px 20px 20px;
+}
+.btnM > a{
+    display: block;
+    line-height: 15px;
+    font-size: 15px;
+    padding: 10px;
+    background: #AC8541;
+    color: #FFF !important;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none !important;
+}
+
+.inner960{
+    width: 960px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.thumbList{
+    display: flex;
+    flex-direction: column;
+}
+
+.sldBlock{
+    display: flex;
+}
+.withBar{
+    background-color: #0a0a0a;
+    color: #FFF;
+    font-size: 20px;
+    text-align: left;
+    padding: 10px 20px;
+}
+
+.borderBlock{
+    padding: 40px 40px 30px;
+    border: 1px solid #bbb;
+    margin: 0 auto 50px;
+}
+.table01{
+   width:100%;
+   border-collapse: collapse;
+}
+.detail{
+    width: auto;
+}
+
+.table01-detail > th{
+    border: 1px solid #DDD;
+    padding: 10px 15px;
+    text-align: left;
+    font-size: 16px;
+    background-color: #fff;
+
+}
+
+.table01-detail > td{
+    border: 1px solid #DDD;
+    vertical-align: middle;
+    padding: 10px 15px;
+    text-align: left;
+    font-size: 12px;
+
+}
+.caution{
+    font-size: 10px;
+    padding: 20px 20px 0 0;
+}
+/*=============================================
+=           roomintro-drop down                  =
+=============================================*/
+
+
+.roomintro-mob{
+    display: none; 
+}
+
+.roommain{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+    position: relative;
+    margin: 20px auto 0 auto;
+}
+
+.roomdown-menu{
+    display: none;
+    width: 70%;
+    background-color: transparent;
+    cursor: default;
+    margin: 0 auto;
+    z-index: 99;
+
+}
+   
+.roomdown-menu > li > a{
+    text-decoration: none;
+    background-color:gainsboro;
+    color: #8a8a8a;
+    border-top: 1px solid #f4f4f4;
+    display: block;
+    padding:12px 20px;
+}
+
+.hoveAlpha > a:hover{
+    color: #47df98;
+    background-color: #27292b;
+    cursor: context-menu;
+}
+
+.roommain > i{
+    position: absolute;
+    padding: 0 20px;
+}
+/*=============================================
+=                  roomintro-mob         =
+=============================================*/
+@media (max-width: 767.98px){
+    .content-left{
+        display: none !important;
+    }
+
+    .guestroom{
+        flex-direction: column;
+    }
+
+    .roomintro-mob{
+        text-align: center;
+        display: inline-block !important;
+    }
+}
+/*=============================================
+=                  roomintro-mob         =
+=============================================*/
+@media (max-width: 767.98px){
+    .floor-intro{
+        flex-direction: column;
+    }
+
+    .sldBlock{
+        flex-direction: column;
+    }
+    .thumbList{
+        flex-direction: row !important;
+    }
+    .titleBlock{
+        text-align: center;
+    }
+    .titleBlock > p{
+        line-height: 1.5;
+    }
+    .title{
+        margin: 10px;
+    }
+}

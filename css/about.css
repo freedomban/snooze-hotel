@@ -1,0 +1,35 @@
+/*=============================================
+=                  about                  =
+=============================================*/
+.floorroomname {
+    border: 1px solid;
+    padding: 10px;
+    background-color: #0f0108;
+    color: rgb(252, 241, 241);
+    font-size: 1rem;
+    text-align: center;
+}
+
+.floor-intro > table {
+    flex: 1;
+    margin: 0 50px;
+}
+.aboutme{
+    flex: 1;
+}
+
+.floor{
+    border-left: 1px solid;
+    background-color: rgb(231, 189, 189);
+    border: 1px solid #fff;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+.floor-intro{
+    display: flex;
+}
+
+.floor{
+    color: #010a06;
+}

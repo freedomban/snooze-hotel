@@ -1,0 +1,135 @@
+/*=============================================
+=                  location                  =
+=============================================*/
+
+.loc-infor{
+    display: flex;
+}
+
+.map{
+    margin: 0 auto;
+}
+
+.mapTitle{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.mapTitle > h1{
+    font-size: 25px;
+    padding: 10px;
+}
+
+.mapTitle > h2,
+.mapTitle > h3{
+    font-size: 15px;
+    padding: 10px;
+}
+
+.titleBox2{
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e3e3e3;
+    text-align: center;
+}
+.titleHow{
+    position: relative;
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 16px;
+    font-size: 14px;
+    letter-spacing: .1em;
+    color: #000;
+    font-weight: 400;
+    font-weight: bolder;
+}
+
+.titleHow::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 2px;
+    background-color: #916f2d;
+}
+
+.fa-solid{
+    font-size: 40px;
+    padding: 0 20px;
+}
+
+.conPub{
+    padding: 15px;
+    line-height: 1.5;
+}
+
+.titleCars,
+.titleTrain,
+.titleAir{
+    margin: 0 20px;
+    padding: 20px 0;
+}
+.locatBox2{
+    text-align: center;
+    width: 100%;
+}
+
+.timeTable{
+    overflow-x: auto;
+    width: 100%;
+}
+
+.locatBox2{
+    border-collapse: collapse;
+}
+
+.arrive > td{
+    border: 1px solid;
+    padding: 10px 20px;
+}
+
+.clock > td{
+    border: 1px solid #bbb;
+    padding: 12px 25px;
+}
+
+/*=============================================
+=                  left-side                  =
+=============================================*/
+.content-left{
+    display: inline-block;
+    margin: 40px;
+    vertical-align: baseline;
+    text-align: center
+}
+
+
+.list-title{
+    color: #8a8a8a;
+    display: block;
+    font-weight: lighter;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.content-left-list{
+    display: block;
+    background-color: transparent;
+    cursor: default;
+    padding: 15px;
+}
+
+.content-left-list > li > a{
+    background-color:gainsboro;
+    color: #8a8a8a;
+    border-top: 1px solid #f4f4f4;
+    display: block;
+    text-decoration: none;
+    padding:12px 20px;
+}
+.hoveAlpha > li > a:hover{
+    color: #47df98;
+    background-color: #27292b;
+    cursor: context-menu;
+}

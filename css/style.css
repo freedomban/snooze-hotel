@@ -80,14 +80,20 @@ body {
 .text{
     flex: 1;
     background-color: black;
-    padding: 50px 0;
+    padding: 45px 0;
 }
-
+.text > h2{
+    color: #FFFFFF;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
 
 .text > p{
     color: #FFFFFF;
     padding: 0 20px;
     font-size: 1rem;
+    line-height: 1.5;
 }
 
 .background{
@@ -112,7 +118,7 @@ body {
 }
 
 /*=============================================
-=                  w-80 W-100                  =
+=                  w-80 W-100 COMM                  =
 =============================================*/
 .w-80nop {
     display: block;
@@ -151,8 +157,8 @@ body {
 .w-100-center > h1::after{
     content: "";
     display: block;
-    height: 4px;
-    width: 8em;
+    height: 3px;
+    width: 28rem;
     background-color: #8b9fb3;
     margin: auto;
 }
@@ -224,15 +230,13 @@ body {
     color: #0a0a0a;
     text-decoration: none;
     font-size: 1rem;
-    font-weight:normal;
     padding: 10px 0;
 }
 
 .content > p{
     color: #505253;
     font-size: 0.625rem;
-    font-weight:normal;
-    padding: 20px 0;
+    line-height: 1.5;
     
 }
 
@@ -294,18 +298,34 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
+}
+.news-list{
+    width: 30%;
+}
+
+
+.news-content{
+    padding: 5px;
 }
 
 .item-1 > img{
-    width: 330px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
+.item-1{
+    padding: 10px;
+}
+.news-content{
+    padding: 10px
+}
 
 /*=============================================
 =                  room                  =
 =============================================*/
 .roomcontainer{
-    width: 1200px;
     margin: auto;
     text-align: center;
 }
@@ -314,20 +334,19 @@ body {
 .roomitem{
     display: flex; 
     justify-content: center;
-    
 }
 
 .roomlist{
-    margin:0 50px;
+    margin:0 30px;
     background-color: #ffffff69;
     border-radius: 4px;
     overflow: hidden;
     border: 1px solid;
     text-align: -webkit-center;
+    width: 35%;
 }
 
 .roomtext{
-    width: 300px;
     padding: 20px;
     box-sizing: border-box;
     text-align: center;
@@ -345,7 +364,7 @@ body {
 }
 .roomlist > img{
     text-align: center;
-    width:400px;
+    width: 100%;
 }
 
 .roombtn{
@@ -360,20 +379,22 @@ body {
 }
 
 .roomsection2{
-    padding:40px 0;
+    padding:20px 0;
 }
 
 /*============================================
 =                  fac                  =
 =============================================*/
 .wrap{
-    width: 1200px;
     margin: auto;
 
 }
 .facitem{
     display: flex;
     align-items: center;
+    margin-top: 20px;
+    padding-top: 30px;
+    -webkit-filter:drop-shadow(5px 5px 5px #333);
 }
 
 .factimg{
@@ -385,10 +406,46 @@ body {
     vertical-align: middle;
     width: 80%;
 } 
+
+
+.factext4{
+    width: 55%;
+    flex-shrink: 0;
+    background-color: #7e1f02;
+    color: #eee7d9;
+    padding: 50px 30px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    border-radius: 4px;
+}
+.factext3{
+    width: 55%;
+    flex-shrink: 0;
+    background-color:  #0e4061;
+    color: #eee7d9;
+    padding: 50px 30px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    border-radius: 4px;
+}
+.factext2{
+    width: 55%;
+    flex-shrink: 0;
+    background-color: #b47523;
+    color: #ffffff;
+    padding: 50px 30px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    border-radius: 4px;
+}
 .factext{
     width: 55%;
     flex-shrink: 0;
-    background-color: #47df98;
+    background-color: #35041f;
+    color: #faf7f1;
     padding: 50px 30px;
     box-sizing: border-box;
     position: relative;
@@ -414,28 +471,38 @@ body {
 /*=============================================
 =                  about                  =
 =============================================*/
-
 .floorroomname {
     border: 1px solid;
-    padding: 9px;
-    background-color: #0a0a0a;
-    color: #fff;
-    font:revert;
+    padding: 10px;
+    background-color: #0f0108;
+    color: rgb(252, 241, 241);
+    font-size: 1rem;
+    text-align: center;
 }
 
-.floor-intro table {
-    margin: auto auto 40px auto;
+.floor-intro > table {
+    flex: 1;
+    margin: 0 50px;
+}
+.aboutme{
+    flex: 1;
 }
 
 .floor{
     border-left: 1px solid;
-    background-color: firebrick;
+    background-color: rgb(231, 189, 189);
     border: 1px solid #fff;
     padding: 5px;
     text-align: center;
     vertical-align: middle;
 }
+.floor-intro{
+    display: flex;
+}
 
+.floor{
+    color: #010a06;
+}
 
 /*=============================================
 =                  contact                  =
@@ -443,7 +510,7 @@ body {
 .conwrap{
     display: flex;
     justify-content: center;
-    background-image: url(./material/pexels-konstantinos-eleftheriadis-2034335.jpg);
+    background-image: url(../material/pexels-konstantinos-eleftheriadis-2034335.jpg);
     background-repeat:no-repeat ;
     background-size: cover;
     background-position: center;
@@ -479,7 +546,7 @@ body {
 }
 
 
-  /*=============================================
+/*=============================================
 =                  food                  =
 =============================================*/
 
@@ -487,16 +554,11 @@ body {
     width: 80%;
     margin: auto;
     display: flex;
-}
-.restphoto-word{
-    background-color: rgb(58, 46, 6);
+    background-color:rgb(58, 46, 6); ;
 }
 
 .restphoto > img{
-    height: 300px;
-}
-.restphoto-word{
-    height: 300px;
+    width: 100%;
 }
 
 .restname{
@@ -534,8 +596,12 @@ body {
 =                  location                  =
 =============================================*/
 
+.loc-infor{
+    display: flex;
+}
+
 .map{
-    text-align: center;
+    margin: 0 auto;
 }
 
 .mapTitle{
@@ -639,7 +705,6 @@ body {
     font-weight: lighter;
     font-size: 1.5em;
     text-decoration: none;
-    vertical-align:baseline
 }
 
 .content-left-list{
@@ -657,31 +722,26 @@ body {
     text-decoration: none;
     padding:12px 20px;
 }
-.content-left-list > li > a:hover{
-    color: #47df98;
-    background-color: #27292b;
-    cursor: context-menu;
-}
 
 .sldimg > img{
     display: block;
     width: 100%;
-    height: 400px;
+    height: 398.5px;
     object-fit: cover;   
 }
 
-.on > img{
+.sldimg-block > img{
     width: 100%;
     height: 131px;
     object-fit: cover;
     overflow: hidden;
 }
 
-.on:hover{
+.sldimg-block:hover{
     filter: none;
 }
 
-.on{
+.sldimg-block{
     filter: grayscale(100%);
 }
 
@@ -718,6 +778,12 @@ section.guestroom{
     text-decoration: none !important;
 }
 
+.inner960{
+    width: 960px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
 .thumbList{
     display: flex;
     flex-direction: column;
@@ -737,7 +803,6 @@ section.guestroom{
 .borderBlock{
     padding: 40px 40px 30px;
     border: 1px solid #bbb;
-    background-color: #f4f4f4;
     margin: 0 auto 50px;
 }
 .table01{
@@ -769,6 +834,53 @@ section.guestroom{
     font-size: 10px;
     padding: 20px 20px 0 0;
 }
+/*=============================================
+=           roomintro-drop down                  =
+=============================================*/
+
+
+.roomintro-mob{
+    display: none; 
+}
+
+.roommain{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+    position: relative;
+    margin: 20px auto 0 auto;
+}
+
+.roomdown-menu{
+    display: none;
+    width: 70%;
+    background-color: transparent;
+    cursor: default;
+    margin: 0 auto;
+    z-index: 99;
+
+}
+   
+.roomdown-menu > li > a{
+    text-decoration: none;
+    background-color:gainsboro;
+    color: #8a8a8a;
+    border-top: 1px solid #f4f4f4;
+    display: block;
+    padding:12px 20px;
+}
+
+.hoveAlpha > a:hover{
+    color: #47df98;
+    background-color: #27292b;
+    cursor: context-menu;
+}
+
+.roommain > i{
+    position: absolute;
+    padding: 0 20px;
+}
+
 
 /*=============================================
 =           goBackBtn                  =

@@ -1,0 +1,92 @@
+html{
+    font-size: 16px;
+}
+
+body {
+    font-family: arial, 微軟正黑體;
+    margin: 0;
+}
+/* ===================================
+=                  fac                  =
+============================================= */
+.wrap{
+    margin: auto;
+
+}
+.facitem{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 30px;
+    -webkit-filter:drop-shadow(5px 5px 5px #333);
+}
+
+.factimg{
+    width: 55%;
+    flex-shrink: 0;
+} 
+
+.factimg > img{
+    vertical-align: middle;
+    width: 80%;
+} 
+
+
+.factext4{
+    width: 55%;
+    flex-shrink: 0;
+    background-color: #7e1f02;
+    color: #eee7d9;
+    padding: 50px 30px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    border-radius: 4px;
+}
+.factext3{
+    width: 55%;
+    flex-shrink: 0;
+    background-color:  #0e4061;
+    color: #eee7d9;
+    padding: 50px 30px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    border-radius: 4px;
+}
+.factext2{
+    width: 55%;
+    flex-shrink: 0;
+    background-color: #b47523;
+    color: #ffffff;
+    padding: 50px 30px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    border-radius: 4px;
+}
+.factext{
+    width: 55%;
+    flex-shrink: 0;
+    background-color: #35041f;
+    color: #faf7f1;
+    padding: 50px 30px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.facitem > :first-child{
+    margin-right: -15%;
+}
+
+.factext > h2{
+    font-size: 1.25rem;
+}
+
+.factext > p{
+    font-size: 1rem;
+    padding: 10px;
+    line-height: 16px;
+}

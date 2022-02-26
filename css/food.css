@@ -1,0 +1,67 @@
+/*=============================================
+=                  food                  =
+=============================================*/
+
+.restaurantinner{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    background-color:rgb(58, 46, 6); ;
+}
+
+.restphoto > img{
+    width: 100%;
+}
+
+.restname{
+    font-size: 1.25rem;
+    margin: 0 20px;
+    padding: 10px 0;
+    color: #fff;
+}
+.taglist{
+    text-align: left;
+    margin: 10px 10px 15px;
+}    
+
+.taglist > li{
+    display: inline-block;
+    font-size: 12px;
+    padding: 5px 8px;
+    background-color: aliceblue;
+}
+
+.desc{
+    font-size: 13px;
+    text-align: inherit;
+    padding: 0 10px;
+    line-height: 1.2;
+    color: #fff;
+}
+
+.restfood-list{
+    margin:15px 0 50px 0
+}
+
+/*=============================================
+=                  food        =
+=============================================*/
+@media (max-width: 767.98px){
+
+    .restaurantinner{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .restphoto{
+        width: 100%;
+    }
+    .restphoto > img{
+        width: 100%;
+        height: auto;
+    }
+    .restfood-list{
+        background-color:rgb(58, 46, 6); ;
+    }
+
+}

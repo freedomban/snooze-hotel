@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>roomintro</title>
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href ="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./hamburger.css">
-    <link rel="stylesheet" href="./rwd.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/hamburger.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/roomintro.css">
 </head>
 <body>
     <header class="header-top">
         <nav class="navbar">
             <div class="logo-div">
                 <a href="./index.html">
-                    <img src="./logo.png" alt="logo" class="logo-img">
+                    <img src="./material/logo.png" alt="logo" class="logo-img">
                 </a>
             </div>
         </nav>
@@ -47,24 +47,48 @@
             </div>
         </div>
     </section>
-    <section class="conbox-left guestroom">
+    <section class="conbox-left guestroom ">
         <div class="content-left">
             <a class="list-title" href="./room.html">客房旅宿</a>
             <ul class="content-left-list">
-                <li>
+                <li class="hoveAlpha">
                     <a href="./roomintro.html">VICE PRESIDENTIAL SUITE</a>
                 </li>
-                <li>
+                <li class="hoveAlpha">
                     <a href="./roomintro.html">PRESIDENTIAL SUITE</a>
                 </li>
-                <li>
-                    <a href="./roomintro.html">豪華兩人房</a>
+                <li class="hoveAlpha">
+                    <a href="./roomintro.html">經典修復睡眠兩人房</a>
                 </li>
-                <li>
-                    <a href="./roomintro.html">尊榮客房雙床房</a>
+                <li class="hoveAlpha">
+                    <a href="./roomintro.html">尊榮自然睡過頭雙床房</a>
                 </li>
-                <li>
-                    <a href="./roomintro.html">都會客房雙床房</a>
+                <li class="hoveAlpha">
+                    <a href="./roomintro.html">深層安眠四人房</a>
+                </li>
+            </ul>
+        </div>
+         <!-- mob drop down menu -->
+        <div class="roomintro-mob ">
+            <a class="roommain">
+                <b>全部房型</b>
+                <i class="fa fa-angle-down"></i>
+            </a>
+            <ul class="roomdown-menu">
+                <li class="hoveAlpha">
+                    <a href="./roomintro.html">VICE PRESIDENTIAL SUITE</a>
+                </li>
+                <li class="hoveAlpha">
+                    <a href="./roomintro.html">PRESIDENTIAL SUITE</a>
+                </li>
+                <li class="hoveAlpha">
+                    <a href="./roomintro.html">經典修復睡眠兩人房</a>
+                </li>
+                <li class="hoveAlpha">
+                    <a href="./roomintro.html">尊榮自然睡過頭雙床房</a>
+                </li>
+                <li class="hoveAlpha">
+                    <a href="./roomintro.html">深層安眠四人房</a>
                 </li>
             </ul>
         </div>
@@ -74,13 +98,13 @@
                     <img src="./material/r00m42.jpg" alt="" >
                 </div>
                 <div class="thumbList">
-                    <div class="on hoveAlpha">
+                    <div class="sldimg-block">
                         <img src="./material/r00m42.jpg" alt="" >
                     </div>
-                    <div class="on hoveAlpha">
+                    <div class="sldimg-block">
                         <img src="./material/pexels-bath-jean-van-der-meulen-1454804.jpg" alt="">
                     </div>
-                    <div class="on hoveAlpha">
+                    <div class="sldimg-block">
                         <img src="./material/jens-kreuter-ngMtsE5r9eI-unsplash.jpg" alt="">
                     </div>
                 </div>
@@ -90,46 +114,47 @@
                 <p>溫潤的木質色調提升空間的柔和氣息，設計簡約，同時兼具滿足旅客體驗的各項機能設施。</p>
                 <ul class="btnWrap">
                     <li class="btnM">
-                        <a href="#" class="hoverAlpha-pc">預定住宿</a>
+                        <a href="#">預定住宿</a>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
-    <section>
-        <div class="borderBlock">
-            <h3 class="withBar">客房資訊</h3>
-            <div class="inner">
-                <div class="detail">
-                    <table class="table01">
-                        <tbody>
-                            <tr class="table01-detail">
-                                <th>客房面積(㎡)</th>
-                                <td>36㎡</td>
-                            </tr>
-                            <tr class="table01-detail">
-                                <th>床型尺寸（cm）</th>
-                                <td>200-220cm × 203cm</td>
-                            </tr>
-                            <tr class="table01-detail">
-                                <th>客房設備</th>
-                                <td>特色舒眠床、立體環繞音響、55 吋智慧型液晶電視、冰箱、電熱水壺、吹風機、睡衣、<br>拖鞋、保險箱、熨斗、免費網路（Wi-Fi)</td>
-                            </tr>
-                            <tr class="table01-detail">
-                                <th>客房備品</th>
-                                <td>棉花棒、牙刷組、刮鬍刀、化妝棉、梳子、浴帽、濾掛式咖啡、茶包、礦泉水</td>
-                            </tr>
-                            <tr class="table01-detail">
-                                <th>浴室與盥洗設施</th>
-                                <td>獨立浴缸及雨淋式淋浴間、LED 化妝鏡、頂級品牌沐浴用品、吹風機、浴袍</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <p class="caution">入住時間16:00／退房時間13:00</p>
+    
+        <div class="inner960">
+            <div class="borderBlock">
+                <h3 class="withBar">客房資訊</h3>
+                <div class="inner">
+                    <div class="detail">
+                        <table class="table01">
+                            <tbody>
+                                <tr class="table01-detail">
+                                    <th>客房面積(㎡)</th>
+                                    <td>36㎡</td>
+                                </tr>
+                                <tr class="table01-detail">
+                                    <th>床型尺寸（cm）</th>
+                                    <td>200-220cm × 203cm</td>
+                                </tr>
+                                <tr class="table01-detail">
+                                    <th>客房設備</th>
+                                    <td>特色舒眠床、立體環繞音響、55 吋智慧型液晶電視、冰箱、電熱水壺、吹風機、睡衣、<br>拖鞋、保險箱、熨斗、免費網路（Wi-Fi)</td>
+                                </tr>
+                                <tr class="table01-detail">
+                                    <th>客房備品</th>
+                                    <td>棉花棒、牙刷組、刮鬍刀、化妝棉、梳子、浴帽、濾掛式咖啡、茶包、礦泉水</td>
+                                </tr>
+                                <tr class="table01-detail">
+                                    <th>浴室與盥洗設施</th>
+                                    <td>獨立浴缸及雨淋式淋浴間、LED 化妝鏡、頂級品牌沐浴用品、吹風機、浴袍</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="caution">入住時間16:00／退房時間13:00</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
     <footer id="footer" class="text-white">
         <div class="confooter">
             <div class="confoot">
@@ -186,6 +211,7 @@
             </p>
         </div>
     </footer>
+    <script src="https://kit.fontawesome.com/6775dccb08.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./main.js"></script>
 </body>

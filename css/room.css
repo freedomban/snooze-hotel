@@ -1,0 +1,75 @@
+/*=============================================
+=                  room                  =
+=============================================*/
+.roomcontainer{
+    margin: auto;
+    text-align: center;
+}
+
+
+.roomitem{
+    display: flex; 
+    justify-content: center;
+}
+
+.roomlist{
+    margin:0 30px;
+    background-color: #ffffff69;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid;
+    text-align: -webkit-center;
+    width: 35%;
+}
+
+.roomtext{
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.roomtext > h2{
+   font-size: 1.25rem;
+   padding: 10px;
+   color: saddlebrown;
+}
+.roomtext > p{
+    font-size: 1rem;
+    padding: 10px;
+    line-height: 1.2;
+}
+.roomlist > img{
+    text-align: center;
+    width: 100%;
+}
+
+.roombtn{
+    line-height: 1.5em;
+    border: 1px solid rgb(14, 12, 12);
+    padding: 0 1em;
+    align-self: flex-end;
+    text-decoration: none;
+    border-radius: 200px;
+    margin-top: auto;
+
+}
+
+.roomsection2{
+    padding:20px 0;
+}
+
+/*=============================================
+=                  room-mob         =
+=============================================*/
+
+@media (max-width: 767.98px){
+    .roomitem{
+        flex-wrap: wrap;
+    }
+
+    .roomlist{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+}

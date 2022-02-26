@@ -1,0 +1,214 @@
+html{
+    font-size: 16px;
+}
+
+body {
+    font-family: arial, 微軟正黑體;
+    margin: 0;
+}
+
+/*=============================================
+=                   index-介紹                    =
+=============================================*/
+
+.home-img{
+    display: flex;
+    margin:40px 20px 0 20px;
+}
+
+.text{
+    flex: 1;
+    background-color: black;
+    padding: 45px 0;
+}
+.text > h2{
+    color: #FFFFFF;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.text > p{
+    color: #FFFFFF;
+    padding: 0 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.background{
+    flex: 1;
+    background-image: url(../material/hotel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+
+.home-img2{
+    display: flex;
+    margin:0 20px 0 20px;
+}
+
+.background2{
+    flex: 1;
+    background-image: url(../material/fac.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*=============================================
+=                 index 最新消息 MORE                 =
+=============================================*/
+.topic{
+    margin-bottom: 60px;
+    position: relative;
+}
+.topic > h2{
+    color: #dcbb0f;
+    text-align: center;
+    margin-top: 20px;
+    border-bottom: 1px solid #cecece;
+    padding: 20px 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.btn-more{
+    font-size: 0.75rem;
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+
+}
+.topic > a {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    background: transparent;
+    color: #8b9fb3;
+    text-decoration: none;
+}
+/*=============================================
+=                  index-最新消息                  =
+=============================================*/
+
+.news-img-list{
+    display: flex;
+    justify-content: center;
+
+}
+
+.item{
+    text-align: left;
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.img-item1,
+.img-item2,
+.img-item3{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 200px;
+}
+
+.item > a{
+    text-decoration: none;
+}
+
+.content > h3{
+    color: #0a0a0a;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 0;
+}
+
+.content > p{
+    color: #505253;
+    font-size: 0.625rem;
+    line-height: 1.5;
+    
+}
+/*=============================================
+=                  手機導覽列         =
+=============================================*/
+.hamburger{
+    display: none;
+}
+
+.on{
+    display: inline-block !important;
+}
+
+@media (max-width: 767.98px){
+    .header-top{
+        display: flex;
+        justify-content: space-between;
+    }
+    .ham-top {
+        z-index: 99;
+        margin: auto 0;
+    }
+    .hamburger{
+        display: inline-block;
+        margin: 0 auto;
+    }
+    .offcanvas {
+        display: none;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        background-color: rgba(0, 0, 0, .3);
+        padding: 60px 0;
+        top: 0;
+    }
+
+    .offcanvas ul{
+        flex-direction: column;
+    }
+
+    .offcanvas ul li {
+        margin: 18px 0;
+        text-align: center;
+    }
+
+    .offcanvas ul li a {
+        color: white;
+        font-weight: 600;
+        font-size: 1.2rem;
+        text-decoration: none;
+    }
+}
+/*=============================================
+=                  index-mob         =
+=============================================*/
+@media (max-width: 767.98px){    
+    .myImg_Slider{
+        max-height: 300px;
+    }
+
+    .home-img{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .background{
+        height: 300px;
+        flex: none;
+    }
+
+    .home-img2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .background2{
+        height: 300px;
+        flex: none;
+    }
+    .news-img-list{
+        flex-direction: column;
+    }
+
+}    

@@ -1,0 +1,169 @@
+/*=============================================
+=                  手機導覽列         =
+=============================================*/
+.hamburger{
+    display: none;
+}
+
+.on{
+    display: inline-block !important;
+}
+
+@media (max-width: 767.98px){
+    .header-top{
+        display: flex;
+        justify-content: space-between;
+    }
+    .ham-top {
+        z-index: 99;
+        margin: auto 0;
+    }
+    .hamburger{
+        display: inline-block;
+        margin: 0 auto;
+    }
+    .offcanvas {
+        display: none;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        background-color: rgba(0, 0, 0, .3);
+        padding: 60px 0;
+        top: 0;
+    }
+
+    .offcanvas ul{
+        flex-direction: column;
+    }
+
+    .offcanvas ul li {
+        margin: 18px 0;
+        text-align: center;
+    }
+
+    .offcanvas ul li a {
+        color: white;
+        font-weight: 600;
+        font-size: 1.2rem;
+        text-decoration: none;
+    }
+}
+/*=============================================
+=                  index-mob         =
+=============================================*/
+@media (max-width: 767.98px){    
+    .myImg_Slider{
+        max-height: 300px;
+    }
+
+    .home-img{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .background{
+        height: 300px;
+        flex: none;
+    }
+
+    .home-img2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .background2{
+        height: 300px;
+        flex: none;
+    }
+    .news-img-list{
+        flex-direction: column;
+    }
+
+}    
+/*=============================================
+=                  news-mob         =
+=============================================*/
+@media (max-width: 767.98px){
+    .news-list{
+        width: 100%;
+    }
+}
+
+/*=============================================
+=                  room-mob         =
+=============================================*/
+
+@media (max-width: 767.98px){
+    .roomitem{
+        flex-wrap: wrap;
+    }
+
+    .roomlist{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+}
+
+/*=============================================
+=                  roomintro-mob         =
+=============================================*/
+@media (max-width: 767.98px){
+    .content-left{
+        display: none !important;
+    }
+
+    .guestroom{
+        flex-direction: column;
+    }
+
+    .roomintro-mob{
+        text-align: center;
+        display: inline-block !important;
+    }
+}
+/*=============================================
+=                  roomintro-mob         =
+=============================================*/
+@media (max-width: 767.98px){
+    .floor-intro{
+        flex-direction: column;
+    }
+
+    .sldBlock{
+        flex-direction: column;
+    }
+    .thumbList{
+        flex-direction: row !important;
+    }
+    .titleBlock{
+        text-align: center;
+    }
+    .titleBlock > p{
+        line-height: 1.5;
+    }
+    .title{
+        margin: 10px;
+    }
+}
+/*=============================================
+=                  food        =
+=============================================*/
+@media (max-width: 767.98px){
+
+    .restaurantinner{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .restphoto{
+        width: 100%;
+    }
+    .restphoto > img{
+        width: 100%;
+        height: auto;
+    }
+    .restfood-list{
+        background-color:rgb(58, 46, 6); ;
+    }
+
+}
