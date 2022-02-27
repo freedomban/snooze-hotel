@@ -9,14 +9,11 @@ body {
 /* ===================================
 =                  fac                  =
 ============================================= */
-.wrap{
-    margin: auto;
-
-}
+.facitem2,
 .facitem{
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin: 20px 0 0 40px;
     padding-top: 30px;
     -webkit-filter:drop-shadow(5px 5px 5px #333);
 }
@@ -27,44 +24,11 @@ body {
 } 
 
 .factimg > img{
-    vertical-align: middle;
-    width: 80%;
+    width: 100%;
+    border-radius: 2px;
+    object-fit: fill;
 } 
 
-
-.factext4{
-    width: 55%;
-    flex-shrink: 0;
-    background-color: #7e1f02;
-    color: #eee7d9;
-    padding: 50px 30px;
-    box-sizing: border-box;
-    position: relative;
-    z-index: 1;
-    border-radius: 4px;
-}
-.factext3{
-    width: 55%;
-    flex-shrink: 0;
-    background-color:  #0e4061;
-    color: #eee7d9;
-    padding: 50px 30px;
-    box-sizing: border-box;
-    position: relative;
-    z-index: 1;
-    border-radius: 4px;
-}
-.factext2{
-    width: 55%;
-    flex-shrink: 0;
-    background-color: #b47523;
-    color: #ffffff;
-    padding: 50px 30px;
-    box-sizing: border-box;
-    position: relative;
-    z-index: 1;
-    border-radius: 4px;
-}
 .factext{
     width: 55%;
     flex-shrink: 0;
@@ -77,16 +41,53 @@ body {
     border-radius: 4px;
 }
 
+.facitem2 > :first-child{
+    margin-right: -15%;
+}
+
 .facitem > :first-child{
     margin-right: -15%;
 }
 
 .factext > h2{
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .factext > p{
     font-size: 1rem;
     padding: 10px;
     line-height: 16px;
+}
+
+/* ===================================
+=              fac-mob                  =
+============================================= */
+
+@media (max-width: 767.98px){
+    .facitem{
+        flex-direction: column;
+        margin: auto;
+        align-items:initial;
+        padding: 30px;
+    }
+
+    .facitem2{
+        flex-direction: column-reverse;
+        margin: auto;
+        align-items:initial ;
+        padding: 30px;
+    }
+    .factimg{
+        width: 100%;
+    }
+    
+    .factimg > img{
+        display: block;
+        width: 100%;
+        
+    }
+    .factext{
+        width: 100%;
+    }
+
 }

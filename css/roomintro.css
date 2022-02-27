@@ -234,4 +234,8 @@ section.guestroom{
     .title{
         margin: 10px;
     }
+    .inner960{
+        width: 100%; 
+        max-width: 960px;
+    }
 }

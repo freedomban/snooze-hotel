@@ -10,7 +10,8 @@
 }
 
 .restphoto > img{
-    width: 100%;
+    max-width: 500px;
+    object-fit: cover;
 }
 
 .restname{
@@ -57,8 +58,8 @@
         width: 100%;
     }
     .restphoto > img{
+        display: block;
         width: 100%;
-        height: auto;
     }
     .restfood-list{
         background-color:rgb(58, 46, 6); ;

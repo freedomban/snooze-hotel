@@ -33,6 +33,7 @@
     display: flex;
     color: #0f0d0d;
     padding: 50px 0;
+    white-space: nowrap;
 }
 
 .w-100-center > h1::before,
