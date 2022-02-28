@@ -1,41 +1,98 @@
 /*=============================================
 =                  contact                  =
 =============================================*/
-.conwrap{
+.snooze-form{
+    margin: 0;
+    outline: none;
+    color: #666;
+}
+.wrapper-form{
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    width: 960px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.conform{
     display: flex;
+    text-align: center;
     justify-content: center;
-    background-image: url(../material/pexels-konstantinos-eleftheriadis-2034335.jpg);
-    background-repeat:no-repeat ;
-    background-size: cover;
-    background-position: center;
-
+}
+.form-list{
+    padding: 0 15px;
 }
 
-.contact-form{
-    width: 500px;
-    height: 500px;
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    border: 10px solid #fff;
-    display: flex;
-    justify-content: center;
-    backdrop-filter: blur(6px);
-    margin: 20px 0;
-    align-items: center;
-}
-
-.form label{
-    line-height: 2;
-    font-weight: bold;
-}
-
-.form input{
-    line-height: 1.5;
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 15px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
     border-radius: 4px;
+    box-sizing: border-box;
+}
+.snooze-form .select select{
+    width: 100%;
+    height: 35px;
 }
 
-.submitlist > button{
-    background-color: green;
-    color: #FFFFFF;
+.snooze-form section{
+    margin-bottom: 20px;
+}
+.mess{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.textarea textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    height: 124px;
+}
+
+.sub{
+    background: #f2f2f2;
+    padding: 15px 30px 25px 30px;
+    text-align: right;
+}
+
+.sub > button{
+    background: #9c8061;
+    height: 39px;
+    overflow: hidden;
+    margin: 10px 0 0 20px;
+    padding: 0 25px;
+    outline: none;
+    border: 0;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/*=============================================
+=                  contact-mob                  =
+=============================================*/
+
+@media (max-width: 767.98px){
+    .snooze-form fieldset{
+        display: block;
+        max-width: 350px;
+    
+    }
+    .conform{
+        display: flex;
+        flex-direction: column;
+    }
+    
+
 }
 

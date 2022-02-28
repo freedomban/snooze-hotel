@@ -155,7 +155,9 @@
     position: relative;
     margin: 20px auto 0 auto;
 }
-
+.roommain > b{
+    padding: 0 20px;
+}
 .roomdown-menu{
     display: none;
     width: 70%;

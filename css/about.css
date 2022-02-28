@@ -49,3 +49,12 @@
     display: block;
     margin: 25px 0;
 }
+
+@media (max-width: 767.98px){
+    .floor-intro{
+        flex-direction: column;
+    }
+    .aboutme >p{
+        margin: 25px 20px;
+    }
+}
