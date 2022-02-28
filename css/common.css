@@ -52,10 +52,15 @@
 =                  footer                  =
 =============================================*/
 #footer{
-    padding-top: 40px;
+    padding-top: 20px;
     text-align: center;
     background-color: #000;
     margin-top:110px;
+}
+
+.footer-list > a{
+    text-decoration: none;
+    color: #FFF;
 }
 
 .confooter{
@@ -97,6 +102,60 @@
 .footer-end{
     line-height: 1.5;
 } 
+
+.text-uppercase{
+    padding: 0 0 5px 0;
+}
+/*=============================================
+=                  footer-mob  css                =
+=============================================*/
+.footer-mob{
+    display: none;
+}
+
+.ft > a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+.ft{
+    padding: 10px 0;
+    
+}
+
+.ft > h4{
+    padding: 5px 0;
+}
+
+.ft > ul > li{
+    display: none;
+    padding-top: 10px;
+}
+.ft > ul > li > a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.625rem;
+}
+
+/*=============================================
+=                  footer-mob                  =
+=============================================*/
+@media (max-width: 767.98px){
+    .confoot{
+        display: none ;
+    }
+    
+    .footer-mob{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-end{
+        margin: 0 10px;
+    }
+    .text-center{
+        line-height: 1.5;
+    }
+}
 
 
 /*=============================================

@@ -23,7 +23,13 @@ $(() => {
     $(".roomdown-menu").toggle();
   });
 
-
+  //footer-mob 選單點擊
+  $(".ftromdown").on("click", function(){
+    $(".ftromdown > ul > li").toggle();
+  });
+  $(".ftdown").on("click", function(){
+    $(".ftdown > ul > li").toggle();
+  });
 
 
 });
