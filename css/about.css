@@ -1,11 +1,11 @@
 /*=============================================
-=                  about                  =
+=                  about-floor                 =
 =============================================*/
 .floorroomname {
-    border: 1px solid;
+    border: 1px solid #fff;
     padding: 10px;
-    background-color: #0f0108;
-    color: rgb(252, 241, 241);
+    background-color: rgb(240, 219, 192);
+    color: #010a06;
     font-size: 1rem;
     text-align: center;
 }
@@ -20,7 +20,7 @@
 
 .floor{
     border-left: 1px solid;
-    background-color: rgb(231, 189, 189);
+    background-color: rgb(243, 236, 227);
     border: 1px solid #fff;
     padding: 5px;
     text-align: center;
@@ -32,4 +32,20 @@
 
 .floor{
     color: #010a06;
+}
+/*=============================================
+=                  about               =
+=============================================*/
+.aboutme > h2{
+    color: #dcbb0f;
+    margin-top: 20px;
+    border-bottom: 1px solid #cecece;
+    padding: 5px 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.aboutme > p{
+    line-height: 2;
+    display: block;
+    margin: 25px 0;
 }

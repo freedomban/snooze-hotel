@@ -16,14 +16,14 @@
 }
 
 .mapTitle > h1{
-    font-size: 25px;
+    font-size: 1,25rem;
     padding: 10px;
     line-height: 1.2;
 }
 
 .mapTitle > h2,
 .mapTitle > h3{
-    font-size: 15px;
+    font-size: 1rem;
     padding: 10px;
 }
 
@@ -38,10 +38,9 @@
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 16px;
-    font-size: 14px;
+    font-size: 0.9rem;
     letter-spacing: .1em;
     color: #000;
-    font-weight: 400;
     font-weight: bolder;
 }
 
@@ -77,8 +76,9 @@
 }
 
 .timeTable{
-    overflow-x: auto;
-    width: 100%;
+    width: 960px;
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 .locatBox2{
@@ -110,7 +110,7 @@
     color: #8a8a8a;
     display: block;
     font-weight: lighter;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     text-decoration: none;
 }
 

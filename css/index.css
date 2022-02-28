@@ -131,6 +131,15 @@ body {
     line-height: 1.5;
     
 }
+
+.date{
+    color: #0a0a0a;
+    display: block;
+    font-size: 0.7rem;
+    width: 100%;
+    text-align: right;
+    padding-top: 5px;
+}
 /*=============================================
 =                  手機導覽列         =
 =============================================*/

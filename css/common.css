@@ -34,6 +34,7 @@
     color: #0f0d0d;
     padding: 50px 0;
     white-space: nowrap;
+    font-weight: bolder;
 }
 
 .w-100-center > h1::before,
@@ -80,9 +81,10 @@
     background-color: #27292b;
     color: #FFFFFF;
     font-size: 0.625rem;
-    padding: 20px;
 }
-
+.text-center{
+    margin: 20px 0 ;
+}
 
 .footer-list{
    padding: 0 20px;
@@ -171,4 +173,5 @@
     right: 15px;
     z-index: 1000;
     border-radius: 50%;
+    background-color: cornflowerblue;
 }

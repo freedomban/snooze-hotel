@@ -32,8 +32,8 @@ body {
 .factext{
     width: 55%;
     flex-shrink: 0;
-    background-color: #35041f;
-    color: #faf7f1;
+    background-color: #fafae0;
+    color: black;
     padding: 50px 30px;
     box-sizing: border-box;
     position: relative;
@@ -50,13 +50,13 @@ body {
 }
 
 .factext > h2{
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .factext > p{
     font-size: 1rem;
     padding: 10px;
-    line-height: 16px;
+    line-height: 1.2;
 }
 
 /* ===================================
