@@ -77,6 +77,11 @@ input[type=text]{
     cursor: pointer;
     opacity: 0.8;
 }
+.label{
+    display: block;
+    padding: 10px;
+}
+
 
 /*=============================================
 =                  contact-mob                  =
