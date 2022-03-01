@@ -140,3 +140,36 @@ body {
     text-align: right;
     padding-top: 5px;
 }
+
+/*=============================================
+=                  index-mob               =
+=============================================*/
+@media (max-width: 767.98px){
+    .myImg_Slider{
+        max-height: 300px;
+    }
+
+    .home-img{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .background{
+        height: 300px;
+        flex: none;
+    }
+
+    .home-img2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .background2{
+        height: 300px;
+        flex: none;
+    }
+
+    .news-img-list{
+        flex-direction: column;
+    }
+}
